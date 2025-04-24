@@ -67,34 +67,25 @@ it makes it  able for anyone to Mint their moodNft
 $ forge build
 ```
 
+
 ### Test
 
 ```shell
 $ forge test
 ```
-
-### Format
-
-```shell
-$ forge fmt
+```
+$ forge coverage
 ```
 
-### Gas Snapshots
 
-```shell
-$ forge snapshot
-```
 
-### Anvil
-
-```shell
-$ anvil
 ```
 
 ### Deploy
 
 ```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
+deployMood:
+$ forge script script/DeployMoodNft.s.sol:DeployMoodNft $(NETWORK_ARGS)
 ```
 
 ### Cast
